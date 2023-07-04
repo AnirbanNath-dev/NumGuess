@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .main{
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 60px;
+}
+.container .main .heading{
+    background: linear-gradient(to left , red , blue , purple,red,blue,purple , red);
+    background-size: 400%;
+    animation: heading 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+}
+h3{
+    font-size: 1.5rem;
+    cursor: default;
+    text-align: center;
+    letter-spacing: 2px ;
+}
+@keyframes heading {
+    from{
+        background-position: -100%;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+
+.buttonwrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+
+}
+.btn{
+    padding: 10px 20px;
+    width: 150%;
+    background-color: aqua;
+    border: 2px solid black;
+    font-weight: 550;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    transform: scale(1.06);
+    background-color: white;
+    box-shadow: 0 0 7px aqua;
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: white;
+    }
+    .container .main{
+        gap: 100px;
+        height: 100%;
+        width: 100%;
+    }
+    .container .main .heading{
+        margin-top: 50px;
+    }
+    .btn{
+        padding: 10px 15px;
+        width: 140%;
+    }
+}

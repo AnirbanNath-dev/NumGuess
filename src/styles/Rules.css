@@ -1,0 +1,35 @@
+#gameimage{
+    height: 300px;
+    width: 450px;
+    background-blend-mode: multiply;
+}
+.back{
+    width: 40%!important;
+}
+
+@media screen and (max-width:960px) {
+    .containermode .mainmode #gameimage{
+        height: 250px;
+        width: 350px;
+    }
+    .containermode .mainmode #points{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .containermode .mainmode #gameimage{
+        height: 200px;
+        width: 300px;
+    }
+    .containermode .mainmode #points h3{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1570px) {
+    .containermode .mainmode #points h3{
+        font-size: 20px;
+    }
+    
+}

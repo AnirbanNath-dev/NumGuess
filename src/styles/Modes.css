@@ -1,0 +1,82 @@
+.containermode{
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.containermode .mainmode{
+    height: 90%;
+    width: 70%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containermode .mainmode .boxes{
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    /* margin: 20px; */
+  
+    /* display: flex;
+    gap: 4px; */
+
+}
+h2 , p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1400px){
+    .containermode .mainmode{
+        
+        width: 65%;
+    }
+    .containermode{
+        background-color: white;
+    }
+    
+}
+@media screen and (max-width:1150px) {
+    .containermode .mainmode{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .containermode .mainmode .boxes{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .containermode .mainmode .boxes{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:690px) {
+    .containermode .mainmode .boxes{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:480px) {
+    .containermode .mainmode .boxes{
+        width: 80%;
+    }
+    .containermode .mainmode p{
+        font-size: 11px;
+    }
+
+}
